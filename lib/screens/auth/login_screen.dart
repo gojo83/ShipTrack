@@ -34,7 +34,8 @@ class _LoginScreenState extends State<LoginScreen> {
         SnackBar(content: Text(error), backgroundColor: Colors.red.shade700),
       );
     } else {
-      Navigator.pushReplacementNamed(context, '/home');
+      final isAdmin = context.read<AuthProvider>().isAdmin;
+      Navigator.pushReplacementNamed(context, isAdmin ? '/admin' : '/home');
     }
   }
 
