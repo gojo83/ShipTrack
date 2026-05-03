@@ -163,7 +163,7 @@ class _CreateShipmentScreenState extends State<CreateShipmentScreen> {
             // Sender address
             CustomTextField(
               label: 'Sender Address',
-              hint: 'e.g. Le Meridien, Dhaka',
+              hint: 'e.g. Muhammadpur, Dhaka',
               controller: _senderCtrl,
               validator: (v) => v!.isEmpty ? 'Required' : null,
             ),
@@ -171,7 +171,7 @@ class _CreateShipmentScreenState extends State<CreateShipmentScreen> {
             // Receiver address
             CustomTextField(
               label: 'Receiver Address',
-              hint: 'e.g. Westin Hotel, Dhaka',
+              hint: 'e.g. Agrabad, Chittagong',
               controller: _receiverAddrCtrl,
               validator: (v) => v!.isEmpty ? 'Required' : null,
             ),
